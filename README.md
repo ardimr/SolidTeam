@@ -10,7 +10,7 @@ A collection of Solid Team's Helm charts for Project Sprint Dev Batch 4
 ### Add Helm Repo
 - salty-spitoon
     ```bash
-    helm repo add salty-spitoon-repo https://github.com/ardimr/SolidTeam/salty-spitoon
+    helm repo add solid-team-repo https://raw.githubusercontent.com/ardimr/SolidTeam/main/
     ```
 
     ```bash
