@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  salty-spitoon:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2025-09-06T08:30:39.994401351+07:00"
+    description: A Helm chart for Kubernetes
+    digest: 806b2b3f4cbbc1306753ccaa37cc2345e3543e625428d045706d8eeeed07082b
+    name: salty-spitoon
+    type: application
+    urls:
+    - salty-spitoon-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-09-06T08:30:39.989373186+07:00"
