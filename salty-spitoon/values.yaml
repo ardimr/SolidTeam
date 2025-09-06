@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  pullPolicy: IfNotPresent
+  repository: us-west1-docker.pkg.dev/projectsprint-000001/ps-docker-repo/solid-team
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -41,7 +41,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
+  port: 8080
 
 ingress:
   enabled: false
@@ -73,11 +73,11 @@ resources: {}
 
 livenessProbe:
   httpGet:
-    path: /
+    path: /health
     port: http
 readinessProbe:
   httpGet:
-    path: /
+    path: /health
     port: http
 
 autoscaling:
@@ -105,3 +105,23 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+app:
+  port: 8080
+  env: prod
+
+auth:
+  jwt_signature_key: solidteam
+
+db: 
+  host: localhost
+  port: 5432
+  database: salty-spitoon-dev
+  username: postgres
+  password: postgres
+  schema: public
+
+s3:
+  access_key_id: team-solid
+  secret_access_key: "@team-solid"
+  endpoint: "localhost:9000"
