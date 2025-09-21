@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: us-west1-docker.pkg.dev/projectsprint-000001/ps-docker-repo/solid
+  repository: us-west1-docker.pkg.dev/projectsprint-000001/ps-docker-repo/solid-weenie-hut
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"

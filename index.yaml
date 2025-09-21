@@ -3,7 +3,7 @@ entries:
   salty-spitoon:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-09-21T12:02:48.804499127+07:00"
+    created: "2025-09-21T14:30:04.555330338+07:00"
     description: A Helm chart for Kubernetes
     digest: 23adc82a4a29a5aa5f89630e9194310120efae7a0fdc585c6801b8b848ecff15
     name: salty-spitoon
@@ -14,12 +14,12 @@ entries:
   weenie-hut:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-09-21T12:02:48.80489125+07:00"
+    created: "2025-09-21T14:30:04.555702493+07:00"
     description: A Helm chart for weenie-hut application
-    digest: 232bd0df02b618f22d3c2af80eec985c639ac1cede2fedd0db66a1560eacf07d
+    digest: 6f80aaa0045c25f9941dd446a06dc29f017781c520929641872f08df164c1174
     name: weenie-hut
     type: application
     urls:
     - weenie-hut-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-21T12:02:48.803649338+07:00"
+generated: "2025-09-21T14:30:04.554816655+07:00"
